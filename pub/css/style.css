@@ -1,0 +1,59 @@
+@charset"UTF-8";
+
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #cbcbcb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    width: 100vw;
+    height: 30px;
+}
+
+.navbar-light{
+    background-color: #DA928C !important;
+}
+
+nav a{
+    color: white !important;
+}
+
+nav .storypub{
+    margin-top: -10px;
+    height: 40px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+#mens{
+    height: 15px;
+    width: 254.667px;
+}
+

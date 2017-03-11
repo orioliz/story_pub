@@ -1,0 +1,15 @@
+{
+	"app":{
+		"title":"X Framework",
+		"version":"1.0"
+	},
+	"dbconf":{
+		"driver":"mysql",
+                "dbhost":"localhost",
+                "dbuser":"'root'",
+                "dbpass":"root",
+		"dbname":"story_pub"
+		
+	}
+
+}
