@@ -10,18 +10,10 @@
 			
 		}
                 
-                public function valeuser($username, $password){
-			
-			//con la información que nos envía el controlador realizaremos una sentencia con pdo
-			//esto quiere decir que utilizaremos la variable :username y más adelante con bind le diremos
-			//cual es el campo que tiene que cambiar por esta variable.
-			
-			//después contaremos el número de filas que nos devuelve, y si nos devuelve 1 retornaremos true.
+                public function valeuser($username, $password){	
                     
-                    $this->query("SELECT * FROM users WHERE usersname=:username && password=:password");
-                    
-                    $this->bind(":username",$username);
-                    
+                    $this->query("SELECT * FROM users WHERE username=:username && password=:password");                    
+                    $this->bind(":username",$username);                    
                     $this->bind(":password",$password);
                     
                     $this->execute();

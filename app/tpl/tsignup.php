@@ -8,7 +8,7 @@
      <h1>Sign Up</h1>
      <div id="mens"></div>
      
-     <form class="form-signup" action="/stp/signup/sign" method="post">
+     <form class="form-signup" action="pub/signup/sign" method="post">
          
          <label for="Email"> Email: <input type="text" class="form-control" placeholder="email " id="email" name="email"> </label> <br>
      

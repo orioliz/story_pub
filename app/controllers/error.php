@@ -1,14 +1,11 @@
 <?php
-
+    // Si hay errores se ejecuta esto...
    namespace X\App\Controllers;
-
    use X\Sys\Controller;
 
-//El controlador de error nos sirve para que nos muestre esta pantalla cuando suceda algún error
 
-   class Error extends Controller{
-   		
 
+   class Error extends Controller{   		
    		public function __construct($params){
    			parent::__construct($params);
             $this->addData(array(

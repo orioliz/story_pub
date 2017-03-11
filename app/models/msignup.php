@@ -38,22 +38,15 @@
                        
                        return false;
                        
-                   }else{
-                       //si el usuario y mail no están registrados llamaremos al procedimiento que creamos
-			// anteriormente new user i crearemos el usuario.
-			   
+                   }else{			   
                        $this->query("call storypub.sp_new_user(1, :email, :password, :username)");
                        
-                        $this->bind(":email",$email);
-                    
+                        $this->bind(":email",$email);                    
                         $this->bind(":username",$username);
-
                         $this->bind(":password",$password);
-
                         $this->execute();
                         
-                        return true;
-                       
+                        return true;                       
                    }
                     
                 }

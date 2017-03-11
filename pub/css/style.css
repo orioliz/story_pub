@@ -10,8 +10,7 @@ html{
 }
 
 body{
-    background-color: #cbcbcb;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #cbcbcb;    
 }
 
 #container{
@@ -24,17 +23,19 @@ body{
 
 nav{
     width: 100vw;
-    height: 30px;
+    height: 30px;    
 }
 
 .navbar-light{
-    background-color: #DA928C !important;
+    background-color: rgba(62, 145, 216, 0.62) !important;
 }
 
 nav a{
     color: white !important;
 }
-
+.nav>li>a:focus, .nav>li>a:hover {    
+    background-color: rgb(29, 99, 159);
+}
 nav .storypub{
     margin-top: -10px;
     height: 40px;
@@ -55,5 +56,6 @@ footer{
 #mens{
     height: 15px;
     width: 254.667px;
+    color: red;
 }
 

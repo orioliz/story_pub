@@ -8,13 +8,9 @@
 		public function __construct(){
 			parent::__construct();
 			
-		}   
+		}  
 	
-         public function getRoles(){
-		 
-		 //la función getRoles retorna el número de roles que tenemos en la base de datos
-		 //Gracias a la sentencia.
-                
+         public function getRoles(){                
                 $sql = "SELECT * FROM roles";
                 $this->query($sql);
                 
@@ -25,12 +21,8 @@
                 }
                 else{
                     $result=null;
-                }
-                
+                }                
                 
                 return $result;
             }
-            
-            
-        
-        }
+        } //fin de construct

@@ -4,10 +4,6 @@
 namespace X\App\Controllers;
 use X\Sys\Controller;
 
-//El controlador SignUp funciona parecido al de login, ya que también tiene una función que recoje la información,
-//Este además tambien recoje el mail, y lo enva a la función signuser de modelo para comprobar que los mails existan
-//y si no existen crear el usuario
-
 class SignUp extends Controller{
     
     public function __construct($params){
@@ -29,7 +25,7 @@ class SignUp extends Controller{
         $res=$this->model->signuser($username, $password, $email);
         
         if($res){
-            $this->ajax(array('msg'=>'Correct','class'=>'alert alert-success', 'redir'=>'/stp/dashboard'));
+            $this->ajax(array('msg'=>'Correct','class'=>'alert alert-success', 'redir'=>'/dashboard'));
             
         }else{
            $this->ajax(array('msg'=>'Usuario o Email registrados', 'class'=>'alert alert-danger'));

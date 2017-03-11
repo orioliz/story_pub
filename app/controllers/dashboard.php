@@ -2,9 +2,8 @@
 
    namespace X\App\Controllers;
 
-   use X\Sys\Controller; //hay que poner use porque la class home hereda de controller
+   use X\Sys\Controller; // Home hereda de controller
    
-//Este controlador no tiene ningún misterio, únicamente desde el constructor hacemos un nuevo modelo y vista.
 
    class Dashboard extends Controller{
    		

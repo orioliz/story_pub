@@ -5,12 +5,11 @@
 	<title><?= $this->page;?></title>
        
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="/stp/pub/js/jquery.md5.js" type="text/javascript"></script>
+        <script src="/pub/js/jquery.md5.js" type="text/javascript"></script>
 	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/stp/pub/css/style.css">
-        <script src="/stp/pub/js/app.js" type="text/javascript"> </script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="pub/css/style.css">
+        <script src="/pub/js/app.js" type="text/javascript"> </script>        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
 
 </head>
@@ -18,8 +17,8 @@
     
    <nav class="navbar navbar-light" >
         <div class="container">
-            <a class="navbar-brand" href="/stp">
-                <image class="storypub" src="/stp/pub/images/logo_hor.png">
+            <a class="navbar-brand" href="/pub">
+                <img src="pub/images/logo.png" width="50px">
             </a>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home"><?= $this->page;?></a></li>
